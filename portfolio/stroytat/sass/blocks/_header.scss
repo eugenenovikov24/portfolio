@@ -1,0 +1,257 @@
+.header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.35);
+    background-image: url("./../img/header/header-bg-1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: "";
+
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+}
+
+.header-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.header-top__nav {
+    margin-left: 100px; // PP
+}
+
+.header-top__nav-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-top__nav-list-item {
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.29;
+
+        box-shadow: inset 0 0 0 0 $accent-color;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+        &:hover {
+            box-shadow: inset 100px 0 0 0 $accent-color;
+        }
+    }
+}
+
+.header-top__call {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > * + * {
+        margin-left: 40px;
+    }
+
+    a {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.29;
+    }
+}
+
+.header-top__button {
+    @include buttonsGeneralStyles;
+    padding: 16px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.header-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 673px;
+}
+
+.header-middle__title {
+    width: 941px;
+    margin-top: -20px; // PP
+    margin-bottom: 15px; // PP
+}
+
+.header-middle__text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.28;
+
+    &:first-of-type {
+        margin-bottom: 20px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 60px;
+    }
+}
+
+.header-middle__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > *.header-middle__button + *.header-middle__button {
+        margin-left: 100px;
+    }
+}
+
+.header-middle__button {
+    @include buttonsGeneralStyles;
+    padding: 16px 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+// M e d i a
+
+// Tablet
+@media (max-width: 1919px) {
+    .header {
+        background-image: url("./../img/header/header-bg-1000.jpg");
+    }
+
+    .header-top__nav {
+        margin-left: 0;
+    }
+
+    .header-top__nav {
+        display: none;
+    }
+}
+
+// Mobile
+@media (max-width: 999px) {
+    .header {
+        background-image: url("./../img/header/header-bg-768.jpg");
+    }
+
+    .header-top__emblem {
+        margin-bottom: 9px;
+    }
+    
+    .header-top__emblem-logo {
+        width: 37px;
+    }
+    
+    .header-top__emblem-title {
+        font-size: 18px;
+    }
+    
+    .header-top__emblem-description {
+        font-size: 10.5px;
+    }
+    
+    .header-top__call {
+        * + * {
+            margin-left: 20px;
+        }
+    }
+
+    .header-middle {
+        height: 692px;
+    }
+    
+    .header-middle__title {
+        width: 728px;
+        margin-top: -80px;
+        margin-bottom: 20px;
+    }
+    
+    .header-middle__text {
+        font-size: 28px;
+
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+// Mobile XS
+@media (max-width: 767px) {
+    .header {
+        background-image: url("./../img/header/header-bg-480.jpg");
+    }
+
+    .header-top__emblem {
+        margin-bottom: 7px;
+    }
+    
+    .header-top__emblem-logo {
+        width: 30px;
+    }
+    
+    .header-top__emblem-title {
+        font-size: 16px;
+    }
+    
+    .header-top__emblem-description {
+        font-size: 9px;
+    }
+    
+    .header-top__call {
+        .button {
+            display: none;
+        }
+    }
+    
+    .header-middle {
+        height: 660px;
+    }
+
+    .header-middle__title {
+        width: 440px;
+        margin-top: -8px; // PP
+    }
+    
+    .header-middle__text {
+        &:first-of-type {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    
+        &:last-of-type {
+            font-size: 20px;
+        }
+    }
+    
+    .header-middle__buttons {
+        flex-direction: column;
+        align-items: flex-start;
+
+        & > *.header-middle__button + *.header-middle__button {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.title-1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.3;
+
+    // Mobile
+    @media (max-width: 999px) {
+        font-size: 40px;
+    }
+
+    // Mobile XS
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
+}
+
+.title-2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    span {
+        font-weight: 400;
+    }
+
+    &--dark {
+        color: #282828
+    }
+
+    // Mobile
+    @media (max-width: 999px) {
+        font-size: 40px;
+    }
+
+    // Mobile XS
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
+}
+
+.title-3 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.28;
+    text-transform: uppercase;
+
+    // Tablet
+    @media (max-width: 1919px) {
+        font-size: 24px;
+    }
+}
+
+.title-4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    color: $text-color;
+
+    &--bigger {
+        font-size: 32px;
+        
+        // Mobile XS
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+
+    // Tablet
+    @media (max-width: 1919px) {
+        font-size: 20px;
+    }
+}
+
+.title-5 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.27;
+
+    color: #282828;
+    
+    // Mobile
+    @media (max-width: 999px) {
+        font-size: 32px;
+    }
+
+    &--big {
+        font-size: 72px;
+        color: $text-color;
+
+        // Tablet
+        @media (max-width: 1919px) {
+            font-size: 56px;
+        }
+
+        // Mobile
+        @media (max-width: 999px) {
+            font-size: 48px;
+        }
+
+        // Mobile XS
+        @media (max-width: 767px) {
+            font-size: 38px;
+        }
+    }  
+    
+    &--small {
+        font-size: 32px;
+        color: $text-color;
+
+        // Mobile
+        @media (max-width: 999px) {
+            font-size: 24px;
+        }
+    }
+}
+
+.title-6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.167;
+}

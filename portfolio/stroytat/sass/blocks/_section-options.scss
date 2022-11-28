@@ -1,0 +1,40 @@
+.section-options {
+    padding-bottom: 100px;
+}
+
+.section-options__title {
+    margin-bottom: 50px;
+}
+
+.section-options-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+// M E D I A
+
+//Mobile
+@media (max-width: 999px) {     
+    .section-options-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        & > * + * {
+            margin-top: 50px;
+        }
+    }
+}
+
+//Mobile XS
+@media (max-width: 767px) {
+    .section-options__title {
+        margin-bottom: 60px;
+    }
+
+    .section-options-wrapper {
+       & > * + * {
+            margin-top: 30px;
+        }
+    }
+}

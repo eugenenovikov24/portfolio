@@ -1,0 +1,22 @@
+// Base
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/mobile-nav";
+@import "./blocks/portfolio";
+@import "./blocks/card";
+@import "./blocks/contacts";
+@import "./blocks/roadmap";
+@import "./blocks/roadmap-scheme";
+@import "./blocks/footer";
+
+// UI
+@import "./ui/titles";
+@import "./ui/buttons";
+@import "./ui/link";
+@import "./ui/socials";

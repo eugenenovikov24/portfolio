@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title and SEO -->
+		<title>Евгений Новиков | Web-разработчик</title>
+		<meta name="description" content="Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работа с соблюдением сроков и выполнением технического задания.">
+		<meta name="keywords" content="Евгений Новиков, HTML, вёрстка, web-разработка">
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css">
+
+		<!-- Open Graph -->
+		<meta property="og:url" content="http://www.site.ru/canonicalpage/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Евгений Новиков | Web-разработчик">
+		<meta property="og:image" content="./img/opengraph/opengraph.jpg">
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
+	</head>
+
+	<body>
+
+		<div class="mobile-nav-overlay"></div>
+
+		<!-- Header -->
+		<header class="header" id="header">
+
+			<div class="container header-nav">
+
+				<div class="header__title">HTML-верстальщик</div>
+
+				<!-- Mobile Navigation -->
+				<button class="mobile-nav-button">
+					<span class="mobile-nav-button__middle"></span>
+				</button>
+
+				<div class="mobile-nav">
+					<div class="mobile-nav__content">
+						
+						<ul class="mobile-nav__list">
+							<li><a href="#skills">Навыки</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#roadmap">Как я работаю</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+
+						<div class="mobile-nav__contacts">
+
+							<div class="mobile-nav__socials">
+								<div class="socials">
+									<a href="https://t.me/eugene_novikov24" target="_blank"><img src="./img/socials/telegram.svg" alt="Telegram"></a>
+									<a href="https://vk.com/eugene_novikov" target="_blank"><img src="./img/socials/vk.svg" alt="Vk"></a>
+									<a href="https://api.whatsapp.com/send/?phone=79207325012" target="_blank"><img src="./img/socials/whatsapp.svg" alt="WhatsApp"></a>
+								</div>
+							</div>
+		
+							<div class="link">
+								<a href="mailto:eugene.tolp@gmail.com">eugene.tolp@gmail.com</a> 
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!-- // Mobile Navigation -->
+
+				<ul class="header-nav__list">
+					<li class="header-nav__list-item"><a href="#skills">Навыки</a></li>
+					<li class="header-nav__list-item"><a href="#portfolio">Портфолио</a></li>
+					<li class="header-nav__list-item"><a href="#roadmap">Как я работаю</a></li>
+					<li class="header-nav__list-item"><a href="#contacts">Контакты</a></li>
+				</ul>
+
+				<div class="header-nav__link">
+					<a href="https://github.com/eugenenovikov24"><img src="./img/header/github.svg" alt="GitHub"></a>
+				</div>
+				<!-- <button class="header-nav__theme-button"></button> -->
+
+			</div>
+
+			<div class="container header-about">
+
+				<div class="header-about-introduction">
+					
+					<div class="header-about-introduction__title">
+						<h1 class="title-1">Евгений Новиков</h1>
+					</div>
+
+					<div class="header-about-introduction__text">
+						<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
+					</div>
+
+					<div class="header-about-introduction__buttons">
+						<a class="button" href="#skills">Познакомиться</a>
+						<a class="button button--light" href="#contacts">Контакты</a>
+					</div>
+
+				</div>
+
+				<div class="header-about-img">
+					<picture>
+						<source media="(max-width: 767px)" srcset="./img/header/header-about-img-mob.jpg">
+						<source media="(max-width: 899px)" srcset="./img/header/header-about-img-mob.jpg">
+						<source media="(max-width: 1139px)" srcset="./img/header/header-about-img-tab.jpg">
+						<img src="./img/header/header-about-img-desk.jpg" alt="Img">
+					</picture>
+				</div>
+
+			</div>
+
+			<div class="container container--fluid header-img">
+				<picture>
+					<source media="(max-width: 767px)" srcset="./img/header/header-img-mob-xs.jpg">
+					<source media="(max-width: 899px)" srcset="./img/header/header-img-mob.jpg">
+					<source media="(max-width: 1139px)" srcset="./img/header/header-img-tab.jpg">
+					<img src="./img/header/header-img-desk.jpg" alt="Workspace">
+				</picture>
+			</div>
+
+			<div class="container header-bottom">
+
+				<div class="header-bottom-skills" id="skills">
+
+					<div class="header-bottom-skills__title">
+						<h3 class="title-3">Что я умею:</h3>
+					</div>
+
+					<ul class="header-bottom-skills__list">
+						<li class="header-bottom-skills__list-item">адаптивная и кроссбраузерная вёрстка;</li>
+						<li class="header-bottom-skills__list-item">pixel perfect, полное соответствие макету;</li>
+						<li class="header-bottom-skills__list-item">оптимизация под retina-экраны;</li>
+						<li class="header-bottom-skills__list-item">уверенное пользование редактором Figma.</li>
+					</ul>
+
+				</div>
+
+				<div class="header-bottom-contacts">
+
+					<div class="header-bottom-contacts__title">
+						<h3 class="title-3">На связи:</h3>
+					</div>
+
+					<div class="header-bottom-contacts__socials">
+						<div class="socials">
+							<a href="https://t.me/eugene_novikov24" target="_blank"><img src="./img/socials/telegram.svg" alt="Telegram"></a>
+							<a href="https://vk.com/eugene_novikov" target="_blank"><img src="./img/socials/vk.svg" alt="Vk"></a>
+							<a href="https://api.whatsapp.com/send/?phone=79207325012" target="_blank"><img src="./img/socials/whatsapp.svg" alt="WhatsApp"></a>
+						</div>
+					</div>
+
+					<div class="link">
+						<a href="mailto:eugene.tolp@gmail.com">eugene.tolp@gmail.com</a> 
+					</div>
+
+				</div>
+
+			</div>
+
+		</header>
+		<!-- // Header -->
+
+		<!-- Portfolio -->
+		<section class="portfolio">
+			<div class="container">
+
+				<header class="portfolio__title" id="portfolio">
+					<h2 class="title-2">Портфолио</h2>
+				</header>
+
+				<div class="portfolio__row">
+
+					<a href="./portfolio/unit/index.html" target="_blank" class="card">
+
+						<div class="card__img">
+							<picture>
+								<source media="(max-width: 767px)" srcset="./img/portfolio/unit/unit-mobile-xs.jpg">
+								<source media="(max-width: 899px)" srcset="./img/portfolio/unit/unit-mobile.jpg">
+								<source media="(max-width: 1139px)" srcset="./img/portfolio/unit/unit-tablet.jpg">
+								<img src="./img/portfolio/unit/unit-desktop.jpg" alt="Unit">
+							</picture>
+						</div>
+
+						<div class="card__title">
+							<h4 class="title-4">ЮНИТ. Менеджер задач</h4>
+						</div>
+
+					</a>
+
+					<a href="./portfolio/stroytat/index.html" target="_blank" class="card">
+
+						<div class="card__img">
+							<picture>
+								<source media="(max-width: 767px)" srcset="./img/portfolio/stroytat/stroytat-mobile-xs.jpg">
+								<source media="(max-width: 899px)" srcset="./img/portfolio/stroytat/stroytat-mobile.jpg">
+								<source media="(max-width: 1139px)" srcset="./img/portfolio/stroytat/stroytat-tablet.jpg">
+								<img src="./img/portfolio/stroytat/stroytat-desktop.jpg" alt="StroyTat">
+							</picture>
+						</div>
+
+						<div class="card__title">
+							<h4 class="title-4">СтройТат. Cтроительная компания</h4>
+						</div>
+
+					</a>
+					
+					<a href="http://ivn-tolpino.ru/" target="_blank" class="card">
+
+						<div class="card__img">
+							<picture>
+								<source media="(max-width: 767px)" srcset="./img/portfolio/ivn-tolpino/ivn-tolpino-mobile-xs.jpg">
+								<source media="(max-width: 899px)" srcset="./img/portfolio/ivn-tolpino/ivn-tolpino-mobile.jpg">
+								<source media="(max-width: 1139px)" srcset="./img/portfolio/ivn-tolpino/ivn-tolpino-tablet.jpg">
+								<img src="./img/portfolio/ivn-tolpino/ivn-tolpino-desktop.jpg" alt="ivn-tolpino">
+							</picture>
+						</div>
+
+						<div class="card__title">
+							<h4 class="title-4">Ирина Новикова. Сайт учителя русского языка и литературы</h4>
+						</div>
+
+					</a>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- // Portfolio -->
+
+		<!-- Roadmap -->
+		<section class="roadmap">
+			<div class="container">
+
+				<header class="roadmap__title" id="roadmap">
+					<h2 class="title-2">Как я работаю</h2>
+				</header>
+
+				<div class="roadmap-scheme">
+
+					<div class="roadmap-scheme__item">
+
+						<header class="roadmap-scheme__item-title">
+							<h5 class="title-5">Оцениваю макет</h5>
+						</header>
+
+						<div class="roadmap-scheme__item-description">
+							<p>Оцениваю объем работы, сложность,<br>нюансы. Задаю вопросы.</p>
+							<p>Время: 2 часа</p>
+						</div>
+
+					</div>
+
+					<div class="roadmap-scheme__item">
+					
+						<header class="roadmap-scheme__item-title">
+							<h5 class="title-5">ТЗ, смета и график работ</h5>
+						</header>
+
+						<div class="roadmap-scheme__item-description">
+							<p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
+							<p>Время: 2 - 4 часа</p>
+						</div>
+
+					</div>
+
+					<div class="roadmap-scheme__item">
+						
+						<header class="roadmap-scheme__item-title">
+							<h5 class="title-5">Вы держите руку на пульсе</h5>
+						</header>
+
+						<div class="roadmap-scheme__item-description">
+							<p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p>
+						</div>
+
+					</div>
+
+					<div class="roadmap-scheme__item">
+						
+						<header class="roadmap-scheme__item-title">
+							<h5 class="title-5">Выполняю каждый этап</h5>
+						</header>
+
+						<div class="roadmap-scheme__item-description">
+							<p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
+						</div>
+
+					</div>
+
+					<div class="roadmap-scheme__item">
+						
+						<header class="roadmap-scheme__item-title">
+							<h5 class="title-5">Финальное ревью проекта</h5>
+						</header>
+
+						<div class="roadmap-scheme__item-description">
+							<p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
+							<p>Время: 2 - 4 часа</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- // Roadmap -->
+
+		<!-- Contacts -->
+		<section class="contacts">
+			<div class="container">
+
+				<header class="contacts__title" id="contacts">
+					<h2 class="title-2">Контакты</h2>
+				</header>
+
+				<div class="contacts-row">
+
+					<ul class="contacts__list">
+
+						<li class="contacts__list-item">
+							<div class="contacts__list-item-title">E-mail</div>
+							<div class="contacts__list-item-link link"><a href="mailto:eugene.tolp@gmail.com">eugene.tolp@gmail.com</a></div>
+						</li>
+
+						<li class="contacts__list-item">
+							<div class="contacts__list-item-title">Телефон</div>
+							<div class="contacts__list-item-link"><p>+7 (920) 732-50-12</p></div>
+						</li>
+
+					</ul>
+
+					<div class="contacts__text">
+						<p>Если вы ищите специалиста по верстке сайтов или frontend-разработчика в команду для работы над проектом, напишите мне.</p>
+					</div>
+
+					<img class="contacts__img" src="./img/contacts/quotes.svg" alt="">
+
+				</div>
+
+				<div class="socials">
+					<a href="https://t.me/eugene_novikov24" target="_blank"><img src="./img/socials/telegram.svg" alt="Telegram"></a>
+					<a href="https://vk.com/eugene_novikov" target="_blank"><img src="./img/socials/vk.svg" alt="Vk"></a>
+					<a href="https://api.whatsapp.com/send/?phone=79207325012" target="_blank"><img src="./img/socials/whatsapp.svg" alt="WhatsApp"></a>
+				</div>
+
+			</div>
+		</section>
+		<!-- // Contacts -->
+
+		<!-- Footer -->
+		<footer class="footer">
+
+			<div class="container">
+				<p class="footer__copyright">&copy; 2022 &mdash; Евгений Новиков</p>
+				<p class="footer__text mb-15">Веб-разработчик из Курска.</p>
+				<p class="footer__text">Данный сайт сделан в рамках обучения в онлайн-школе <a href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>	
+			</div>
+
+			<a href="#header" class="footer__scroll-up">
+				<img src="./img/footer/arrow.svg" alt="Arrow">
+			</a>
+		</footer>
+		<!-- // Footer -->
+
+		<script src="./js/main.js"></script>		
+	</body>
+</html>

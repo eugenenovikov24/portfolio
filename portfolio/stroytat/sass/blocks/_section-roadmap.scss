@@ -1,0 +1,46 @@
+.section-roadmap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    background-color: $dark-color;
+}
+
+.section-roadmap-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-roadmap__title {
+    width: 202px;
+}
+
+// M E D I A
+
+// Tablet
+@media (max-width: 1919px) {
+    .section-roadmap-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .section-roadmap__title {
+        width: unset;
+        margin-bottom: 50px;
+    }
+}
+
+// Mobile
+@media (max-width: 999px) {    
+    .section-roadmap {
+        padding-bottom: 41px;
+    }
+}
+
+// Mobile XS
+@media (max-width: 767px) {       
+    .section-roadmap {
+        padding-bottom: 70px;
+    }
+}

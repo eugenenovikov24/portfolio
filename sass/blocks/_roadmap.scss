@@ -1,0 +1,40 @@
+/* Desktop */
+/* #region */
+.roadmap {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.roadmap__title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+/* #endregion */
+
+/* Tablet */
+/* #region */
+@media (max-width: 1139px) {
+    .roadmap {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }   
+    
+    .roadmap__title {
+        margin-bottom: 50px;
+    }
+}
+/* #endregion */
+
+/* Mobile */
+/* #region */
+@media (max-width: 899px) {
+    .roadmap {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .roadmap__title {
+        margin-bottom: 40px;
+    }
+}
+/* #endregion */

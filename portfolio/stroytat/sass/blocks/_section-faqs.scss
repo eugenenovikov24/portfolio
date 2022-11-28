@@ -1,0 +1,129 @@
+.section-faqs {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-faqs__title {
+    margin-bottom: 50px;
+}
+ 
+.section-faqs-accordion {
+    li:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.section-faqs-accordion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #999999;
+}
+
+.section-faqs-accordion-item__title {
+    display: flex;
+    align-items: flex-start;
+}
+
+.section-faqs-accordion-item__number {
+    flex-shrink: 0;
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.275;
+    color: $accent-color;
+}
+
+.section-faqs-accordion-item__wording {
+    padding-right: 20px;
+    color: #282828;
+}
+
+.section-faqs-accordion-item__question {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.28;
+}
+
+.section-faqs-accordion-item__answer {
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+
+    p + p {
+        padding-top: 10px;
+    }
+}
+
+.section-faqs-accordion-item__button {
+    flex-shrink: 0;
+    width: 50px;
+    height: 26px;
+    margin-top: 20px;
+    background-image: url("./../img/faqs/button-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: transform .3s ease;
+
+    &.opening-state {
+        transform: rotate(180deg);
+        transition: transform .3s ease;
+    }
+}
+
+// M E D I A
+
+// Tablet
+@media (max-width: 1919px) {  
+    .section-faqs-accordion-item {
+        padding-bottom: 40px;
+    }
+}
+
+// Mobile
+@media (max-width: 999px) {        
+    .section-faqs-accordion-item {
+        padding-bottom: 45px;
+    }
+
+    .section-faqs-accordion-item__number {
+        margin-right: 30px;
+        font-size: 36px;
+        line-height: 1.277;
+    }
+
+    .section-faqs-accordion-item__question {
+        font-size: 28px;
+    }
+
+    .section-faqs-accordion-item__answer {
+        margin-top: 30px;
+    }
+}
+
+// Mobile XS
+@media (max-width: 767px) {       
+    .section-faqs-accordion-item {
+        padding-bottom: 40px;
+    }
+
+    .section-faqs-accordion-item__number {
+        margin-right: 20px;
+        font-size: 24px;
+        line-height: 1.291;
+    }
+
+    .section-faqs-accordion-item__question {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .section-faqs-accordion-item__answer {
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}

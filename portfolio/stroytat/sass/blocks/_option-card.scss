@@ -1,0 +1,93 @@
+.option-card {
+    width: 554px;
+    padding: 50px;
+    background-color: $dark-color;
+}
+
+.option-card__title {
+    width: 330px;
+    margin-bottom: 40px;
+}
+
+.option-card__price {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #434C56;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.28;
+}
+
+.option-card__list-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.28;
+}
+
+.option-card__list {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+
+    & > * + * {
+        margin-top: 15px;
+    }
+}
+
+.option-card__link {
+    margin-bottom: 40px;
+
+    a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        text-decoration: underline;
+        color: $accent-color;
+    }
+}
+
+.option-card__button {
+    @include buttonsGeneralStyles;
+    padding: 16px 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+// M E D I A
+
+//Tablet
+@media (max-width: 1919px) {    
+    .option-card {
+        width: 300px;
+        padding: 20px;
+    }
+    
+    .option-card__title {
+        width: unset;
+        margin-bottom: 30px;
+    }
+    
+    .option-card__link {
+        margin-bottom: 30px;
+    } 
+}
+
+//Mobile
+@media (max-width: 999px) {     
+    .option-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .option-card__list-title {
+        display: none;
+    }
+    
+    .option-card__list {
+        display: none;
+    }
+}

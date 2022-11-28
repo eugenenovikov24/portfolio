@@ -1,0 +1,21 @@
+@mixin headerUnderline {
+    display: inline;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to right, $accent-color, $accent-color);
+
+	/* Tablet */
+    @media (max-width: 1199px) {
+        background-position: center bottom 8px;
+		background-size: 100% 8px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        
+    }
+}

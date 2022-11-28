@@ -1,0 +1,88 @@
+.service-card {
+    padding: 40px;
+    background-color: $dark-color;
+}
+
+.service-card__title {
+    margin-bottom: 20px;
+}
+
+.service-card__price {
+    margin-bottom: 20px;
+
+    p {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.3;
+        color: $text-color;
+    }
+}
+
+.service-card__description {
+    margin-bottom: 20px;
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $text-color;
+    }
+
+    p + p {
+        margin-top: 10px;
+    }
+}
+
+.service-card__button {
+    position: relative;
+    @include buttonsGeneralStyles;
+    padding: 16px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: -1px;
+        right: -3px;
+        width: 6px;
+        height: 13px;
+        transform: skewX(-25deg);
+        background-color: $dark-color;
+    }
+}
+
+// M E D I A
+
+// Tablet
+@media (max-width: 1919px) {
+    .service-card {
+        padding: 20px;
+    }
+    
+    .service-card__title {
+        margin-bottom: 30px;
+    }
+}
+
+// Mobile
+@media (max-width: 999px) {        
+    .service-card__button {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// Mobile XS
+@media (max-width: 767px) {    
+    .service-card__title {
+        padding-right: 160px;;
+    }
+
+    .service-card__description {
+        margin-bottom: 30px;
+    }
+}

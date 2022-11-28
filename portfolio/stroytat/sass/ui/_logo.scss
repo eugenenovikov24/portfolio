@@ -1,0 +1,23 @@
+.logo__emblem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 176px;
+    margin-bottom: 10px;
+}
+
+.logo__emblem-img {
+    width: 50px;
+}
+
+.logo__emblem-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.logo__emblem-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+}

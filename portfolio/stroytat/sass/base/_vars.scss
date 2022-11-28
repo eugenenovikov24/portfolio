@@ -1,0 +1,13 @@
+$text-color: #ffffff;
+$accent-color: #FF4C00;
+$accent-color-hover: #FB7405;
+$dark-color: #1D2228;
+
+// Ширина и высота линии в иконке
+$lineWidth: 30px;
+$lineHeight: 3px;
+$lineSpace: 7px;
+
+// Размеры контейнера
+$width: $lineWidth;
+$height: $lineHeight * 3 + $lineSpace * 2;

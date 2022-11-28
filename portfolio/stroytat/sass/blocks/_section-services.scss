@@ -1,0 +1,109 @@
+.section-services {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-services__title {
+    margin-bottom: 68px;
+}
+
+.section-services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -27px;
+    margin-right: -27px;
+
+    & > * {
+        width: 404px;
+        margin-left: 27px;
+        margin-right: 27px;
+        margin-bottom: 50px;
+    }
+}
+
+.service-card-button {
+    padding: 127px 45px;
+    border: 4px solid $accent-color;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.27;
+    color: #282828;
+    text-align: left;
+    transition: .3s ease-in;
+
+    &:hover {
+        background-color: $accent-color;
+        color: $text-color;
+    }
+}
+
+// M E D I A
+
+// Tablet
+@media (max-width: 1919px) {
+    .section-services {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    
+    .section-services__cards {
+        margin-left: -15px;
+        margin-right: -15px;
+    
+        & > * {
+            width: 300px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .service-card-button {
+        padding: 132px 20px;
+        font-size: 36px;
+    }
+}
+
+// Mobile
+@media (max-width: 999px) {        
+    .section-services__title {
+        margin-bottom: 50px;
+    }
+    
+    .section-services__cards {    
+        & > * {
+            width: 349px;
+        }
+    }
+
+    .service-card-button {
+        padding-right: 70px;
+    }
+}
+
+// Mobile XS
+@media (max-width: 767px) {    
+    .section-services__cards {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    
+        & > * {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        *[class="service-card"] +
+        *[class="service-card"] +
+        *[class="service-card"] +
+        *[class="service-card"] {
+            display: none;
+        }
+    }
+    
+    .service-card-button {
+        padding: 117px 160px 117px 20px;
+    }
+}

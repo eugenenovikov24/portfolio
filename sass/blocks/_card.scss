@@ -1,0 +1,152 @@
+/* Desktop */
+/* #region */
+.card {
+    width: 350px;
+
+    .card__img {
+        margin-bottom: 16px;
+    }
+
+    .card__title {
+        margin-bottom: 6px;
+    }
+    
+    .card__description {
+        font-size: 18px;
+    }
+
+    &:hover {
+        .card__img::before {
+            top: 0;
+            background-color: rgba(255, 221, 85, 0.5);
+        }
+
+        .card__img::after {
+            height: 51px;
+            background-color: #EF6857;
+            font-size: 18px;
+
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+
+            transition: bottom .3s linear, height .3s linear, background-color .3s linear, font-size .1s linear;
+        }
+    }
+}
+
+.card--big {
+    width: 540px;
+
+    .card__img {
+        margin-bottom: 20px;
+    }
+
+    .card__title {
+        margin-bottom: 8px;
+    }
+    
+    .card__description {
+        font-size: 20px;
+    }
+}
+
+.card__img {
+    position: relative;
+    width: 100%;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-color: transparent;
+
+        transition: all .3s linear;
+    }
+
+    &::after {
+        content: 'Смотреть проект';
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 208px;
+        height: 0;
+        background-color: transparent;
+        border-radius: 80px;
+
+        font-weight: 700;
+        font-size: 0;
+        line-height: 51px;
+        color: #FFFFFF;
+        text-align: center;
+
+        transition: font-size .1s linear, background-color .3s linear, height .3s linear, bottom .3s linear;
+    }
+}
+/* #endregion */
+
+/* Tablet */
+/* #region */
+@media (max-width: 1139px) {
+    .card {
+        width: 270px;
+
+        .card__img {
+            margin-bottom: 10px;
+        }
+    
+        .card__title {
+            margin-bottom: 4px;
+        }
+    }
+    
+    .card--big {
+        width: 420px;
+    
+        .card__title {
+            margin-bottom: 6px;
+        }
+    }
+}
+/* #endregion */
+
+/* Mobile */
+/* #region */
+@media (max-width: 899px) {
+    .card {
+        width: 226px;
+    }
+    
+    .card--big {
+        width: 354px;
+
+        .card__img {
+            margin-bottom: 10px;
+        }
+    
+        .card__title {
+            margin-bottom: 4px;
+        }
+    }
+}
+/* #endregion */
+
+/* Mobile XS */
+/* #region */
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+    
+    .card--big {
+        width: 100%;
+    }
+}
+/* #endregion */

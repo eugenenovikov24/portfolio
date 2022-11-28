@@ -1,0 +1,31 @@
+// Base
+@import "./base/vars";
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/mixins";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/mob-nav";
+@import "./blocks/modal-windows";
+@import "./blocks/section-count";
+@import "./blocks/count-form";
+@import "./blocks/section-about";
+@import "./blocks/section-options";
+@import "./blocks/option-card";
+@import "./blocks/section-roadmap";
+@import "./blocks/roadmap";
+@import "./blocks/section-cta";
+@import "./blocks/section-services";
+@import "./blocks/service-card";
+@import "./blocks/section-portfolio";
+@import "./blocks/section-reviews";
+@import "./blocks/section-faqs";
+@import "./blocks/section-call";
+@import "./blocks/footer";
+
+// UI
+@import "./ui/logo";
+@import "./ui/titles";
+@import "./ui/agreement";

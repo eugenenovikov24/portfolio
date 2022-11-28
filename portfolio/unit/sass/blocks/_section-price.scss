@@ -1,0 +1,107 @@
+.section-price {
+    position: relative;
+
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+    @include bgImage("../img/bg/price-bg.jpg");
+
+    &::before {
+        @extend %overlay;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__header {
+        margin-bottom: 80px;
+        text-align: center;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            margin-bottom: 50px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+
+        /* Mobile-XS */
+        @media (max-width: 599px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+
+        margin-left: -15px;
+        margin-right: -15px;
+
+        & > * {
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 300px;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                width: 270px;
+            }
+
+            /* Mobile */
+            @media (max-width: 899px) {
+                margin-top: 30px;
+                width: 300px;
+            }
+
+            /* Mobile-XS */
+            @media (max-width: 599px) {
+                width: 290px;
+            }
+        } 
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: -30px;
+        }
+    }
+
+     /* Desctop Medium */
+     @media (max-width: 1600px) {
+        @include bgImage("../img/bg/price-bg-1600.jpg");
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include bgImage("../img/bg/price-bg-900.jpg");
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-bottom: 40px;
+        @include bgImage("../img/bg/price-bg-600.jpg");
+    }
+
+    /* Mobile-XS */
+    @media (max-width: 599px) {
+        padding-top: 40px;
+        @include bgImage("../img/bg/price-bg-320.jpg");
+    }
+}
